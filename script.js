@@ -291,7 +291,7 @@ function addZoom(svg) {
         .on("zoom", event => svg.select("g").attr("transform", event.transform));
 
     svg.call(zoom);
-    svg.call(zoom.transform, d3.zoomIdentity.translate(1000, 1000).scale(0.8));
+    svg.call(zoom.transform, d3.zoomIdentity.translate(0, 300).scale(0.8));
 }
 
 function setupEventListeners(svg) {
