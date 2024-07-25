@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Family Tree</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidepage.css">
+    <link rel="stylesheet" href="styles/nodes.css">
+</head>
+<body>
+    <div id="legend"></div>
+
+    <svg id="tree" width="2600pt" height="1000pt">
+        <g></g>
+    </svg>
+
+    <!-- Side panel for displaying person info -->
+    <div id="side-panel" class="side-panel">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <div id="person-info"></div>
+    </div>
+
+    <button id="toggle-images-btn" class="toggle-button active">Hide Images</button>
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script  type="module" src="script.js"></script>
+</body>
+</html>

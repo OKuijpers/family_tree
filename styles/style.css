@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    background-color: black;
+    overflow: hidden; /* Disable scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic";
+}
+
+#tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*pointer-events: none; !* Allow mouse events to pass through to SVG *!*/
+}
+
+/* Combined and cleaned CSS */
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 4px;
+}
+
+.legend {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    fill: #333;
+    z-index: 99;
+}
+
+#legend {
+    position: fixed;
+    top: 10px;
+    right: -00px;
+    z-index: 99;
+
+}
+
+
+.test {
+    fill: #eaa709;
+}
+
+a{
+    color: inherit;
+}
+
+hr{
+border: 1px solid black;
+    /*width: 200%;*/
+    /*margin-left: -40px;*/
+    /*padding-left: -40px;*/
+}
