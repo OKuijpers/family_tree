@@ -332,10 +332,10 @@ async function showPersonInfo(person) {
             <p><strong>Birth:</strong> <a href="${person['URLDateOfBirth']}">${person['DateOfBirth']} </a> <a href="${person['URLPlaceOfBirth']}"> ${person['PlaceOfBirth']}</a></p>
             <p><strong>Death:</strong> <a href="${person['URLDateOfDeath']}">${person['DateOfDeath']} </a> <a href="${person['URLPlaceOfDeath']}"> ${person['PlaceOfDeath']}</a></p>
             <hr>
-            <p><strong><a href="${person['URLProfession']}">Father:</a></strong> ${father ? father.Name : ''}</p>
-            <p><strong><a href="${person['URLProfession']}">Mother:</a></strong> ${mother ? mother.Name : ''}</p>
-            <p><strong><a href="${person['URLProfession']}">Partner:</a></strong> ${partner ? partner.Name : ''}</p>
-            <p><strong><a href="${person['URLProfession']}">Marriage:</a></strong> ${person['DateOfMarriage']} ${person['PlaceOfMarriage']}</p>
+            <p><strong><a href="${person['URLFather']}">Father:</a></strong> ${father ? father.Name : ''}</p>
+            <p><strong><a href="${person['URLMother']}">Mother:</a></strong> ${mother ? mother.Name : ''}</p>
+            <p><strong><a href="${person['URLPartner']}">Partner:</a></strong> ${partner ? partner.Name : ''}</p>
+            <p><strong>Marriage:</strong> ${person['DateOfMarriage']} ${person['PlaceOfMarriage']}</p>
             <hr>
             <p><strong><a href="${person['URLProfession']}">Profession:</a></strong> ${person['Profession'] ? person['Profession'] : ''} </p>
 
